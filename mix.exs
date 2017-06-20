@@ -19,7 +19,7 @@ defmodule ChatzExs.Mixfile do
   def application do
     [mod: {ChatzExs, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :mongodb, :poolboy, :phoenix_ecto, :postgrex]]
   end
 
   # Specifies which paths to compile per environment.
@@ -35,8 +35,10 @@ defmodule ChatzExs.Mixfile do
      {:phoenix_ecto, "~> 3.0"},
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.6"},
+		 {:mongodb, ">= 0.0.0"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
+		 [:cowboy, "~> 1.1"],
      {:cowboy, "~> 1.0"}]
   end
 
