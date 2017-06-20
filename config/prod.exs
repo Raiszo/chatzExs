@@ -18,7 +18,7 @@ config :chatzExs, ChatzExs.Endpoint,
 
 # Do not print debug messages in production
 config :logger, level: :info
-
+config :chatzExs, :db, name: "chatz_mongo_prod"
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key

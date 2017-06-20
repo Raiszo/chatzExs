@@ -8,7 +8,7 @@ config :chatzExs, ChatzExs.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
+config :chatzExs. :db, name: "chatz_mongo_test"
 # Configure your database
 config :chatzExs, ChatzExs.Repo,
   adapter: Ecto.Adapters.Postgres,

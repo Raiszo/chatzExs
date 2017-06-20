@@ -32,7 +32,7 @@ config :logger, :console, format: "[$level] $message\n"
 # Set a higher stacktrace during development. Avoid configuring such
 # in production as building large stacktraces may be expensive.
 config :phoenix, :stacktrace_depth, 20
-
+config :chatzExs, :db, name: "chatz_mongo_test"
 # Configure your database
 config :chatzExs, ChatzExs.Repo,
   adapter: Ecto.Adapters.Postgres,
